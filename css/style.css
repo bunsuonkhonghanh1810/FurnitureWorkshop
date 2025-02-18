@@ -11,6 +11,7 @@
     width: 1280px;
 }
 
+/* Header */
 header {
     position: fixed;
     top: 0;
@@ -46,3 +47,59 @@ header {
 .header-nav .nav > a:hover::before {
     width: 69%;
 }
+/* Header */
+
+/* Banner */
+#banner {
+    margin-top: 9rem;
+    background-image: url('../assets/img/banner.png');
+    width: 100%;
+    height: 51.4375rem;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-content {
+    margin-top: 8.5625rem;
+    margin-left: 3.25rem;
+}
+
+.banner-content :first-child, .banner-content :nth-child(2) {
+    font-size: 2.9rem;
+    text-transform: uppercase;
+    font-family: Gotham-Ultra, sans-serif !important;
+    margin: 0;
+    letter-spacing: 1.2px;
+    line-height: 1;
+}
+
+.banner-content :first-child {
+    margin-bottom: 0.75rem;
+    color: #2c2e53;
+}
+
+.banner-content :nth-child(2) {
+    margin-bottom: 1.5rem;
+    color: #bd945f;
+}
+
+.banner-content > :nth-child(3) {
+    font-size: 1rem;
+    width: 34.5626rem;
+    margin-bottom: 1.75rem;
+    text-align: justify;
+}
+
+.banner-content button {
+    box-sizing: border-box;
+    width: 13.1875rem;
+    height: 4.125rem;
+    color: white;
+    background-color: #bd945f;
+    font-size: 1.21rem;
+    font-family: Gotham-Ultra, sans-serif;
+    text-transform: uppercase;
+    border: 5px solid #bd945f;
+}
+/* Banner */
