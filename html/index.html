@@ -17,6 +17,7 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         >
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
         <link rel="stylesheet" href="../css/fonts.css">
         <link rel="stylesheet" href="../css/style.css">
     </head>
@@ -40,7 +41,6 @@
             </div>
         </header>
         <!-- Header -->
-
         <!-- Banner -->
         <section id="banner">
             <div class="container d-flex">
@@ -53,50 +53,49 @@
             </div>
         </section>
         <!-- Banner -->
-
         <!-- Catalogue -->
-        <div id="catalogue-container" class="container">
+        <section id="catalogue-container" class="container">
             <div id="catalogue" class="container d-flex flex-wrap row-gap-5">
                 <div class="catalogue-box">
                     <div class="catalogue-box-box">
                         <img src="../assets/img/loai-sp/living_room.jpg" alt="">
-                        <p>Phòng khách</p>        
+                        <p>Phòng khách</p>
                     </div>
                 </div>
                 <div class="catalogue-box">
                     <div class="catalogue-box-box">
                         <img src="../assets/img/loai-sp/bedroom.jpg" alt="">
-                        <p>Phòng ngủ</p>        
+                        <p>Phòng ngủ</p>
                     </div>
                 </div>
                 <div class="catalogue-box">
                     <div class="catalogue-box-box">
                         <img src="../assets/img/loai-sp/kitchen.jpg" alt="">
-                        <p>Phòng bếp</p>        
+                        <p>Phòng bếp</p>
                     </div>
                 </div>
                 <div class="catalogue-box">
                     <div class="catalogue-box-box">
                         <img src="../assets/img/loai-sp/bathroom.jpg" alt="">
-                        <p>Phòng tắm</p>        
+                        <p>Phòng tắm</p>
                     </div>
                 </div>
                 <div class="catalogue-box">
                     <div class="catalogue-box-box">
                         <img src="../assets/img/loai-sp/kid_toys.jpg" alt="">
-                        <p>Trẻ em</p>        
+                        <p>Trẻ em</p>
                     </div>
                 </div>
                 <div class="catalogue-box">
                     <div class="catalogue-box-box">
                         <img src="../assets/img/loai-sp/office.jpg" alt="">
-                        <p>Văn phòng</p>        
+                        <p>Văn phòng</p>
                     </div>
                 </div>
                 <div class="catalogue-box">
                     <div class="catalogue-box-box">
                         <img src="../assets/img/loai-sp/stairs.jpg" alt="">
-                        <p>Cầu thang</p>        
+                        <p>Cầu thang</p>
                     </div>
                 </div>
                 <div class="catalogue-box">
@@ -106,9 +105,18 @@
                     </div>
                 </div>
             </div>
-        </div>
-    
+        </section>
         <!-- Catalogue -->
+        <!-- Standout products -->
+        <section id="standout-products">
+            <div class="container">
+                <div id="standout-products-container" class="d-flex flex-column align-items-center">
+                    <p>Sản phẩm nổi bật</p>
+                    <div id="list-product" class="position-relative d-flexsection"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Standout products -->
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
             integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -116,5 +124,7 @@
             referrerpolicy="no-referrer"
         ></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="../js/standout_products.js"></script>
     </body>
 </html>
