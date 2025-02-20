@@ -242,3 +242,144 @@ header {
     right: -4.125rem;
 }
 /* Standout product */
+
+/* About us */
+.about-us {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 67.5rem;
+    background-image: url("../assets/img/ve-chung-toi/bg-about-us.jpg");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.about-us::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+.about-us > div > div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 3.25rem; 
+    width: 100%;
+    z-index: 1
+}
+
+.about-us-top {
+    margin-bottom: calc(100vw * 0.04532);
+}
+
+.about-us-top-text p {
+    font-size: 1.9rem;
+    font-family: Gotham-Ultra, sans-serif;
+    line-height: 1;
+    margin-bottom: 4.125rem;
+    position: relative;
+}
+
+.about-us-top-text p::after {
+    content: '';
+    position: absolute;
+    left: 2.08rem;
+    top: 2.3rem;
+    width: 70%;
+    height: 0.5625rem;
+    background-color: #bd945f;
+}
+
+.about-us-top-content {
+    gap: calc(100vw * 0.01649);
+}
+
+.about-us-top-content > div {
+    width: calc((100% - 100vw * 0.01649) / 2);
+}
+
+.about-us-top-content-left img {
+    width: 100%;
+}
+
+.about-us-top-content-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.about-us-top-content-right * {
+    color: white;
+    margin: 0;
+    line-height: 1;
+}
+
+.about-us-top-content-right > :nth-child(2), .about-us-top-content-right > :nth-child(3) {
+    width: 90%;
+}
+
+.about-us-top-content-right-picture div {
+    width: calc((100% 100vw * 0.0074468 * 3) / 4);
+}
+
+.about-us-top-content-right-picture img {
+    width: 100%;
+}
+
+.about-us-bottom-text p {
+    font-size: 1.9rem;
+    font-family: Gotham-Ultra, sans-serif;
+    line-height: 1;
+    position: relative;
+    margin-bottom: 4.125rem;
+}
+
+.about-us-bottom-text p::after {
+    content: '';
+    position: absolute;
+    left: 12.12rem;
+    top: 2.3rem;
+    width: 28.5%;
+    height: 0.5625rem;
+    background-color: #bd945f;
+}
+
+.about-us-bottom-content {
+    gap: calc(100vw * 0.01649);
+}
+
+.about-us-bottom-content > div {
+    box-sizing: border-box;
+    width: calc((100% - 100vw * 0.01649) / 2);
+    height: calc(100vw * 0.06);
+    background-color: white;
+    padding: 1.3125rem 2.3125rem;
+}
+
+.about-us-bottom-content > div img {
+    margin-right: 2.25rem;
+}
+
+.about-us-bottom-content > div > div * {
+    margin: 0;
+}
+
+.about-us-bottom-content > div > div :first-child {
+    color: #bd945f;
+    font-size: 1.5rem; 
+    font-family: Gotham-Ultra, sans-serif;
+}
+
+.about-us-bottom-content > div > div :last-child {
+    font-size: 0.875rem; 
+}
+/* About us */
