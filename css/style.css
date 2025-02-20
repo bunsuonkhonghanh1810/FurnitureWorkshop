@@ -18,9 +18,9 @@ header {
     background-color: white;
     width: 100%;
     z-index: 100;
-    -webkit-box-shadow: 0px 8px 14px -4px rgba(0,0,0,0.6);
-    -moz-box-shadow: 0px 8px 14px -4px rgba(0,0,0,0.6);
-    box-shadow: 0px 8px 14px -4px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 8px 14px -4px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 8px 14px -4px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 8px 14px -4px rgba(0, 0, 0, 0.6);
 }
 
 .header-nav .nav {
@@ -104,7 +104,6 @@ header {
 }
 /* Banner */
 
-
 /* Catalogue */
 #catalogue-container {
     position: relative;
@@ -145,3 +144,101 @@ header {
     margin: 0;
 }
 /* Catalogue */
+
+/* Standout product */
+#standout-products {
+    background-color: #f3f3f3;
+    height: 67.5rem;
+}
+
+#standout-products-container {
+    padding-top: 36rem;
+}
+
+#standout-products-container > p {
+    position: relative;
+    font-family: Gotham-Ultra, sans-serif;
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0;
+    margin-bottom: 4rem;
+}
+
+#standout-products-container > p::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 0.5625rem;
+    left: 5rem;
+    top: 2.625rem;
+    background-color: #bd945f;
+}
+
+#standout-products h4 {
+    color:  #2c2e53;
+    font-size: 1rem;
+    font-family: Gotham-Ultra, sans-serif;
+    margin: 0.7rem 0 0 0;
+}
+
+#list-product {
+    width: 1180px;
+}
+
+.product-box {
+    margin-right: 2.0625rem;
+}
+
+.product-box a {
+    text-decoration: none;
+}
+
+.product-title {
+    display: inline-block;
+}
+
+.product-title :nth-child(2) {
+    margin: 0;
+    margin-top: -0.05rem;
+}
+
+.product-title :nth-child(3) {
+    color: #888888;
+    font-size: 0.75rem;
+    margin: 0;
+    margin-top: -0.05rem;
+}
+
+.product-title :nth-child(4) {
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+.fa-star {
+    font-size: 0.9rem;
+}
+
+.slick-arrow {
+    position: absolute;
+    font-size: 1.95rem;
+    line-height: 1;
+    padding: 0.4rem;
+    width: 1.95rem;
+    aspect-ratio: 1/1;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    background-color: #bd945f;
+}
+
+.slick-prev {
+    top: 7rem;
+    left: -4.125rem;
+}
+
+.slick-next {
+    top: 7rem;
+    right: -4.125rem;
+}
+/* Standout product */
