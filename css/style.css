@@ -508,3 +508,67 @@ header {
     width: 10.53rem;
 }   
 /* Partners */
+
+/* Contact */
+.contact {
+    height: 18.75rem;
+    background-image: url('../assets/img/lienhe-bg.jpg');
+}
+
+.contact-image {
+    position: absolute;
+    left: 2.375rem;
+    bottom: 3.25rem;
+}
+
+.contact-container {
+    width: 73.75rem;
+}
+
+.contact-container-left > div {
+    margin-right: 10rem;
+}
+
+.contact-container-left > div::before {
+    content: '';
+    position: absolute;
+    width: 10rem;
+    height: 0.5625rem;
+    top: 4rem;
+    background-color: #fff;
+}
+
+.contact-container-left * {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0;
+    line-height: 1;
+}
+
+.contact-container-left > div :nth-child(2) {
+    font-family: Gotham-Ultra, sans-serif;
+    margin-top: 0.5rem;
+}
+
+.contact-container-right * {
+    line-height: 1;
+}
+
+.contact-container-right-input {
+    border: none;
+    width: 23rem;
+    padding: 1.2rem 1.5rem ;
+    margin-right: 2rem;
+}
+
+.contact-container-right-button {
+    border: none;
+    padding: 1.31rem 3rem;
+    background-color: #fff;
+}
+
+.contact-container-right-button:hover {
+    background-color: #eeeeee;
+}
+/* Contact */
