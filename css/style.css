@@ -572,3 +572,89 @@ header {
     background-color: #eeeeee;
 }
 /* Contact */
+
+/* Footer */
+footer {
+    height: 18.75rem;
+    background-color: #363636;
+}
+
+footer * {
+    font-size: 1.125rem;
+    color: #fff;
+    line-height: 1;
+}
+
+footer > div > div {
+    display: inline-block;
+    height: 12rem;
+}
+ 
+.footer-left > :nth-child(1) {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.footer-left > :nth-child(1)::before {
+    content: '';
+    position: absolute;
+    width: 5.625rem;
+    height: 0.25rem;
+    top: 1.625rem;
+    background-color: #fff;
+}
+
+.footer-left-contact {
+    margin-left: 0.625rem;
+}
+
+.footer-left-contact p {
+    font-family: Gotham-Thin, sans-serif;
+}
+
+.footer-left-contact img {
+    margin-right: 1rem;
+    margin-top: -0.3rem;
+}
+
+.footer-mid p {
+    font-family: Gotham-Thin, sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.footer-mid > :nth-child(1) {
+    position: relative;
+    font-family: Gotham-Medium, sans-serif;
+    margin-bottom: 2rem;
+}
+
+.footer-mid > :nth-child(1)::before {
+    content: '';
+    position: absolute;
+    width: 5.625rem;
+    height: 0.25rem;
+    top: 1.625rem;
+    background-color: #fff;
+}
+
+.footer-right > :nth-child(1), .footer-right > :nth-child(2) {
+    margin-bottom: 2rem;
+}
+
+.footer-right > :nth-child(1) {
+    position: relative;
+}
+
+.footer-right > :nth-child(1)::before {
+    content: '';
+    position: absolute;
+    width: 5.625rem;
+    height: 0.25rem;
+    top: 1.625rem;
+    background-color: #fff;
+}
+
+.footer-right-contact img {
+    margin-right: 0.5rem;
+}
+/* Footer */
