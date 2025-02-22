@@ -112,6 +112,7 @@ h4::before {
     background-color: #bd945f;
 }
 
+/* Foundation */
 .foundation {
     width: 66.25rem;
     margin: 5rem auto 0;
@@ -125,6 +126,28 @@ h4::before {
     text-align: justify;
     width: 31.25rem;
 }
+/* Foundation */
+
+/* Vision */
+.vision {
+    width: 66.25rem;
+    margin: 6.25rem auto 0;
+    overflow: hidden;
+}
+
+.vision h4 {
+    margin-bottom: 3.125rem
+}
+
+.vision-content img {
+    margin-bottom: 2rem;
+}
+
+.vision-content p {
+    text-align: justify;
+}
+/* Vision */
+
 /* Foundation, vision and destiny */
 
 /* Footer */
