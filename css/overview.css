@@ -76,6 +76,57 @@ header {
 }
 /* Banner */
 
+/* Foundation, vision and destiny */
+.foundation-vision-destiny {
+    position: relative;
+    background-color: #f3f3f3;
+    height: 97.5rem;
+}
+
+.foundation-vision-destiny * {
+    line-height: 1.2;
+}
+
+.foundation-vision-destiny > div > div {
+    position: absolute;
+    top: -3.875rem;
+    background-color: #fff;
+    width: 80rem;
+    height: 93.75rem;
+}
+
+h4 {
+    position: relative;
+    font-family: Gotham-Ultra, sans-serif;
+    font-size: 1.875rem;
+    text-align: center;
+}
+
+h4::before {
+    content: '';
+    position: absolute;
+    width: 10rem;
+    height: 0.5625rem;
+    top: calc(100% + 0.5rem);
+    left: calc(50% - 5rem);
+    background-color: #bd945f;
+}
+
+.foundation {
+    width: 66.25rem;
+    margin: 5rem auto 0;
+}
+
+.foundation h4 {
+    margin-bottom: 5rem;
+}
+
+.foundation-text {
+    text-align: justify;
+    width: 31.25rem;
+}
+/* Foundation, vision and destiny */
+
 /* Footer */
 footer {
     height: 18.75rem;
