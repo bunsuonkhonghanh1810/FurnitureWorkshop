@@ -76,6 +76,63 @@ header {
 }
 /* Banner */
 
+/* Contact */
+.contact-with-us {
+    height: 40.25rem;
+    background-color: #f3f3f3;
+}
+
+.contact-with-us-container {
+    position: absolute;
+    background-color: #fff;
+    width: 80rem;
+    height: 40.25rem;
+    top: -3.875rem;
+}
+
+.contact-with-us-container > div {
+    display: flex;
+    gap: 6.25rem;
+    width: max-content;
+}
+
+.contact-with-us-content-right p {
+    font-family: Gotham-Ultra, sans-serif;
+    font-size: 1.875rem;
+    color: #bd945f;
+    margin-bottom: 1.5rem;
+}
+
+.contact-with-us-content-right input {
+    box-sizing: border-box;
+    width: 33.375rem;
+    height: 3.625rem;
+    border: 0.1875rem solid #bd945f;
+    padding: 0 1.5rem;
+    margin-bottom: 0.75rem;
+    outline: none;
+    transition: box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+
+}
+
+.contact-with-us-content-right input:focus {
+    border: 2px solid #bd8b49;
+    box-shadow: 0 0 8px rgba(216, 173, 80, 0.8);
+}
+
+.contact-with-us-content-right button {
+    border: none;
+    width: 7.875rem;
+    height: 3.625rem;
+    background-color: #bd945f;
+    color: #fff;
+}
+
+.contact-with-us-content-right button:hover {
+    background-color: #b6823f;
+}
+/* Contact */
+
 /* Footer */
 footer {
     height: 18.75rem;
