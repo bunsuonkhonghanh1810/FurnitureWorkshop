@@ -76,6 +76,46 @@ header {
 }
 /* Banner */
 
+/* Partners */
+.partners {
+    height: 92.5rem;
+    background-color: #f3f3f3;
+}
+
+.partners-container {
+    position: absolute;
+    background-color: #fff;
+    width: 80rem;
+    height: 92.5rem;
+    top: -3.875rem;
+}
+
+.partners-content {
+    display: flex;
+    flex-direction: column;
+    gap: 6.25rem;
+}
+
+.partner {
+    display: flex;
+    align-items: center;
+    gap: 7.25rem;
+}
+
+.partner-text > :nth-child(1) {
+    color: #bd945f;
+    font-family: Gotham-Ultra, sans-serif;
+    font-size: 1.875rem;
+    text-transform: uppercase;
+}
+
+.partner-text > :nth-child(2) {
+    width: 46rem;
+    font-size: 1.125rem;
+    margin: 0;
+}
+/* Partners */
+
 /* Footer */
 footer {
     height: 18.75rem;
