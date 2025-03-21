@@ -1,0 +1,45 @@
+<div class="product-top-bottom-content-center">
+    <ul class="tab-list" style="--tab-position: 0px;">
+        <li class="tab active" data-tab="1">Đặc trưng</li>
+        <li class="tab" data-tab="2">Thông số</li>
+        <li class="tab" data-tab="3">Bảo quản</li>
+    </ul>
+</div>
+<style>
+    .tab-list {
+        position: relative;
+    }
+
+    .tab-list::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 10.5rem;
+        height: 3px;
+        background: #007bff;
+        left: var(--tab-position); /* Sử dụng biến CSS */
+        transition: left 0.3s ease;
+    }
+</style>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+></script>
+<script>
+    $(document).ready(function() {
+        let currentTab = 1;
+
+        $('.tab').click(function() {
+            const newTab = parseInt($(this).attr('data-tab'));
+            currentTab = newTab;
+
+            // Cập nhật biến CSS
+            const position = (currentTab - 1) * (10.5 * 16 + 3); // Chuyển rem sang px (1rem = 16px)
+            $('.tab-list').css('--tab-position', `${position}px`);
+
+            console.log('Current Tab:', currentTab);
+        });
+    });
+</script>

@@ -12,3 +12,8 @@
     font-family: Gotham-Ultra;
     src: url("../assets/fonts/Gotham-Ultra.otf");
 }
+
+@font-face {
+    font-family: SVN-Sharpen;
+    src: url("../assets/fonts/SVN-Sharpen.otf");
+}
