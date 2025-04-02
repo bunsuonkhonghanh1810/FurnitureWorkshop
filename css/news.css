@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Gotham-Medium, sans-serif;
+    font-size: 16px;
+    box-sizing: content-box;
+    transition: all 0.3s ease-out;
+}
+
+.container {
+    width: 1280px;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 100;
+    -webkit-box-shadow: 0px 8px 14px -4px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 8px 14px -4px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 8px 14px -4px rgba(0, 0, 0, 0.6);
+}
+
+.header-nav .nav {
+    gap: 3.5rem
+}
+
+.header-nav .nav > a {
+    color: black;
+    font-size: 1rem;
+    padding: 0.5rem 1.687rem;
+    position: relative;
+}
+
+.header-nav .nav > a::before {
+    content: '';
+    position: absolute;
+    top: 1.75rem;
+    width: 0%;
+    height: 0.3125rem;
+    background-color: #bd945f;
+    transition: all 0.3s ease;
+}
+
+.header-nav .nav > a:hover::before {
+    width: 69%;
+}
+/* Header */
+.articles {
+    margin-top: 9rem;
+    padding: 3.875rem 0 3rem 0;
+    background-color: #f3f3f3;
+}
+
+.news-container {
+    background-color: #fff;
+}
+
+/* Articles */
+.news-big-box {
+    width: 73.4375rem;
+    margin-bottom: 2.5rem;
+}
+
+.news-big-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.article-box-text {
+    width: 22.8125rem;
+}
+
+.article-box-img {
+    margin-bottom: 1.25rem;
+}
+
+.news-center {
+    padding: 2.25rem 0;
+}
+
+.news-center > p {
+    position: relative;
+    font-family: Gotham-Ultra, sans-serif;
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.news-center > p::before {
+    content: "";
+    position: absolute;
+    width: 10rem;
+    height: 0.5625rem;
+    background-color: #bd945f;
+    left: calc((50% - 5rem));
+    bottom: -0.5rem;
+}
+
+.title {
+    font-family: Gotham-Ultra, sans-serif;
+    font-size: 1.125rem;
+    color: #bd945f;
+    line-height: 1.25;
+    word-spacing: 0.2rem;
+    text-align: justify;
+    margin-bottom: 1.25rem;
+}
+
+.content {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+.news-center ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.news-center li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.625rem;
+    cursor: pointer;
+}
+
+.news-center a {
+    color: #fff !important;
+    font-size: 0.75rem;
+}
+
+.news-center li:hover {
+    background-color: #bd945f;
+}
+
+.news-center li:hover a {
+    color: #000 !important;
+}
+/* Articles */
+
+/* Footer */
+footer {
+    height: 18.75rem;
+    background-color: #363636;
+}
+
+footer * {
+    font-size: 1.125rem;
+    color: #fff;
+    line-height: 1;
+}
+
+footer > div > div {
+    display: inline-block;
+    height: 12rem;
+}
+ 
+.footer-left > :nth-child(1) {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.footer-left > :nth-child(1)::before {
+    content: '';
+    position: absolute;
+    width: 5.625rem;
+    height: 0.25rem;
+    top: 1.625rem;
+    background-color: #fff;
+}
+
+.footer-left-contact {
+    margin-left: 0.625rem;
+}
+
+.footer-left-contact p {
+    font-family: Gotham-Thin, sans-serif;
+}
+
+.footer-left-contact img {
+    margin-right: 1rem;
+    margin-top: -0.3rem;
+}
+
+.footer-mid p {
+    font-family: Gotham-Thin, sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.footer-mid > :nth-child(1) {
+    position: relative;
+    font-family: Gotham-Medium, sans-serif;
+    margin-bottom: 2rem;
+}
+
+.footer-mid > :nth-child(1)::before {
+    content: '';
+    position: absolute;
+    width: 5.625rem;
+    height: 0.25rem;
+    top: 1.625rem;
+    background-color: #fff;
+}
+
+.footer-right > :nth-child(1), .footer-right > :nth-child(2) {
+    margin-bottom: 2rem;
+}
+
+.footer-right > :nth-child(1) {
+    position: relative;
+}
+
+.footer-right > :nth-child(1)::before {
+    content: '';
+    position: absolute;
+    width: 5.625rem;
+    height: 0.25rem;
+    top: 1.625rem;
+    background-color: #fff;
+}
+
+.footer-right-contact img {
+    margin-right: 0.5rem;
+}
+/* Footer */
