@@ -844,17 +844,37 @@ footer > div > div {
 }
 
 @media (max-width: 575.98px) {
+    * {
+    font-size: 3px;
+
+    }
+    .slick-track {
+        display: flex !important;
+        box-sizing: border-box;
+    }
+
     .container {
         width: 50rem;
     }
 
     header {
-        width: 50%;
+        width: 100%;
     }
 
     header .container {
         margin: 0 !important;
     }
+
+    #list-product {
+        width: 35.75rem;
+    }
+    .slick-list {
+        border: 1px solid red;
+    }
+    .slick-track {
+        border: 1px solid blue;
+    }
+
     /* .catalogue-box {
         width: 50% !important;
     } */
