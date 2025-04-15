@@ -124,3 +124,9 @@ function renderPagesList() {
 }
 
 renderPagesList()
+
+$('.product-box').click(function() {
+    let chosenProduct = $(this).attr('class').split(' ')[1];
+    localStorage.setItem('chosenProduct', chosenProduct);
+    window.location.href = "chosenProduct.html"
+})
