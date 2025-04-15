@@ -506,6 +506,15 @@ footer > div > div {
         font-size: 4px;
     }
 
+    .products-container-1 > nav li {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .products-container-1 > nav a {
+        font-size: 2.5rem;
+    }
+
     header {
         padding: 1.5rem 0 !important;
     }
