@@ -1,6 +1,6 @@
 function renderProduct(product, room) {
     let productBox = `
-        <div class="product-box">
+        <div class="product-box ${product.id}">
             <div class="product-image">
                 <img src="${product.image}" alt="">
             </div>
@@ -59,7 +59,16 @@ renderProductContainer(products);
 $(document).ready(function() {
     $('.products-big-box > div > button').click(function() {
         let chose = $(this).attr('class').split(' ')[0];
-        console.log(chose);
         localStorage.setItem('chose', chose);
+        window.location.href = "allProducts.html"
+    })
+
+    $('.product-box').click(function() {
+        let chose = $(this).closest('.products-big-box').attr('class').split(' ')[1];
+        let chosenProduct = $(this).attr('class').split(' ')[1];
+        localStorage.setItem('chose', chose);
+        localStorage.setItem('chosenProduct', chosenProduct);
+        window.location.href = "chosenProduct.html"
     })
 })
+

@@ -84,3 +84,8 @@ function renderPagesList() {
 }
 
 renderPages(news);
+
+
+$('.article-box').click(function() {
+    window.location.href = "article.html"
+})

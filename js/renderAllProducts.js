@@ -86,6 +86,7 @@ function renderPages() {
         $('.product-box').click(function() {
             let chosenProduct = $(this).attr('class').split(' ')[1];
             localStorage.setItem('chosenProduct', chosenProduct)
+            window.location.href = "chosenProduct.html"
         })
     })
 }
@@ -133,3 +134,6 @@ $('.price').click(function() {
 $('.arrange').click(function() {
     arrangeList($(this).attr('class').split(' ')[1])
 })
+
+$('.products-container-1 > p:nth-child(1)').append(translatedRooms[localStorage.getItem('chose')]);
+

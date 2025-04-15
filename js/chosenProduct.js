@@ -1,6 +1,6 @@
 function renderInfo() {
-    let product = products[localStorage.getItem('chose')][parseInt(localStorage.getItem('chosenProduct').slice(2, localStorage.getItem('chosenProduct').length)) - 1];
-    console.log(product.name)
+    // let product = products[localStorage.getItem('chose')][parseInt(localStorage.getItem('chosenProduct').slice(2, localStorage.getItem('chosenProduct').length)) - 1];
+    let product = products.livingRoom[0];
 
     // Product name
     $('.product-top-content .product-name').append(`${product.name}`);
@@ -38,12 +38,21 @@ function renderInfo() {
             else currentImg++;
         }
 
-        $('.product-top-content-center-left .bigImageSlider').css('transform', `translateX(${-currentImg*45.9375}rem)`)
+        if (window.innerWidth <= 992) {
+            $('.product-top-content-center-left .bigImageSlider').css('transform', `translateX(${-currentImg*65}rem)`)
+        }else {
+            $('.product-top-content-center-left .bigImageSlider').css('transform', `translateX(${-currentImg*45.9375}rem)`)
+        }
     })
 
     $('.smallImage > *').click(function() {
         currentImg = parseInt($(this).attr('data-img'))
-        $('.product-top-content-center-left .bigImageSlider').css('transform', `translateX(${-currentImg*45.9375}rem)`)
+
+        if (window.innerWidth <= 992) {
+            $('.product-top-content-center-left .bigImageSlider').css('transform', `translateX(${-currentImg*65}rem)`)
+        }else {
+            $('.product-top-content-center-left .bigImageSlider').css('transform', `translateX(${-currentImg*45.9375}rem)`)
+        }
     })
 
     // Infomation tabs
@@ -63,10 +72,14 @@ let currentTab = 1;
 $('.product-top-bottom-content-center li').click(function() {
     currentTab = parseInt($(this).attr('data-tab'));
 
-    const position = (currentTab - 1) * (10.5 * 16 + 3);
-    $('.product-top-bottom-content-center > ul').css('--tab-position', `${position}px`);
+    const position = (currentTab - 1) * (10.6875);
+    $('.product-top-bottom-content-center > ul').css('--tab-position', `${position}rem`);
 
-    $('.nav-content-slider').css('transform', `translateX(${-(currentTab - 1)*74}rem)`)
+    if (window.innerWidth <= 992) {
+        $('.nav-content-slider').css('transform', `translateX(${-(currentTab - 1)*65}rem)`)
+    }else {
+        $('.nav-content-slider').css('transform', `translateX(${-(currentTab - 1)*74}rem)`)
+    }
 }) 
 
 function renderProduct(product) {

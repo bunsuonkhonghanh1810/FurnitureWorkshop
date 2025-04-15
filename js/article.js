@@ -1,5 +1,6 @@
 function renderArticle() {
-    let chosenArticle = news[parseInt(localStorage.getItem('chosenArticle').slice(2, localStorage.getItem('chosenArticle').length)) - 1];
+    // let chosenArticle = news[parseInt(localStorage.getItem('chosenArticle').slice(2, localStorage.getItem('chosenArticle').length)) - 1];
+    let chosenArticle = news[0];
     
     $('.article-center-left').append(`<p id="main-article-title">${chosenArticle.headline}</p>`)
     for (let i = 0; i < chosenArticle.article.length; i++) {
